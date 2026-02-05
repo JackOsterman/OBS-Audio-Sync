@@ -3,7 +3,7 @@ import threading
 from obswebsocket import obsws, requests, events, exceptions
 import tomllib
 
-class OBSAudioSync:
+class OBSAudioMixerSync:
     def __init__(self, primary_config, secondary_config, retry_interval=5):
         self.primary_config = primary_config
         self.secondary_config = secondary_config
@@ -90,5 +90,5 @@ if __name__ == "__main__":
     with open("config.toml","rb") as f:
         data = tomllib.load(f)
 
-    sync = OBSAudioSync(data["primary"], data["secondary"])
+    sync = OBSAudioMixerSync(data["primary"], data["secondary"])
     sync.run()

@@ -1,4 +1,4 @@
-# OBS Audio Sync
+# OBS Audio Mixer Sync
 
 ### *Drive two OBS Audio mixers from one instance.*
 
@@ -14,8 +14,8 @@ For my personal setup, sometimes I use only my main PC, sometimes I use my secon
 
 1. Clone the repo 
     ``` 
-    git clone https://github.com/JackOsterman/OBS-Audio-Sync.git
-    cd OBS-Audio-Sync
+    git clone https://github.com/JackOsterman/OBS-Audio-Mixer-Sync.git
+    cd OBS-Audio-Mixer-Sync
     ```
 2. Install requirements
     ```
@@ -38,5 +38,5 @@ For my personal setup, sometimes I use only my main PC, sometimes I use my secon
 4. Ensure Audio Sources are named ***identically*** in both OBS Instances
 5. Run the script
    ```
-   py obs-audio-sync.py
+   py obs-audio-mixer-sync.py
    ```
