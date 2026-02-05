@@ -13,16 +13,16 @@ For my personal setup, sometimes I use only my main PC, sometimes I use my secon
 # Setup
 
 1. Clone the repo 
-    ``` 
+    ``` shell
     git clone https://github.com/JackOsterman/OBS-Audio-Mixer-Sync.git
     cd OBS-Audio-Mixer-Sync
     ```
 2. Install requirements
-    ```
+    ``` shell
     pip install -r requirements.txt
     ```
 3. Create `config.toml`, either by creating the file yourself or renaming `config-template.toml`. Add your configuration based on `Tools > WebSocket Server Settings > Show Connect Info`
-   ```
+   ``` toml
    # OBS Instance that will send and drive the volume mixer for both instances
     [primary]
     host = "0.0.0.0" # Local IP Address of Primary OBS Instance
@@ -37,6 +37,6 @@ For my personal setup, sometimes I use only my main PC, sometimes I use my secon
     ```
 4. Ensure Audio Sources are named ***identically*** in both OBS Instances
 5. Run the script
-   ```
+   ``` shell
    py obs-audio-mixer-sync.py
    ```
